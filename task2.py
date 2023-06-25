@@ -2,17 +2,6 @@
 # Программа должна возвращать сумму и произведение* дробей.
 # Для проверки своего кода используйте модуль fractions.
 
-
-fraction1 = "1/3"  # input("Insert 1: ")
-fraction2 = "1/3"  # input("Insert 2: ")
-
-numerator1 = int(fraction1[0])
-denominator1 = int(fraction1[2])
-
-numerator2 = int(fraction2[0])
-denominator2 = int(fraction2[2])
-
-
 def lcm(a, b):
     m = a * b
     while a != 0 and b != 0:
@@ -22,6 +11,15 @@ def lcm(a, b):
             b %= a
     return m // (a + b)
 
+
+fraction1 = "1/3"  # input("Insert 1: ")
+fraction2 = "1/3"  # input("Insert 2: ")
+
+numerator1 = int(fraction1[0])
+denominator1 = int(fraction1[2])
+
+numerator2 = int(fraction2[0])
+denominator2 = int(fraction2[2])
 
 nok = lcm(denominator1, denominator2)
 frac_sum = f"{int(((numerator1 * nok / denominator1) + (numerator2 * nok / denominator2)))}/{nok}"
