@@ -2,7 +2,9 @@
 # его шестнадцатеричное строковое представление.
 # Функцию hex используйте для проверки своего результата.
 
-#4598
+
+BORDER = 0
+DEVIDER = 16
 num: int = 4597
 num_for_hex = num
 hex_table = {
@@ -14,8 +16,7 @@ hex_table = {
     "15": "F",
     "16": "G"
 }
-BORDER = 0
-DEVIDER = 16
+
 res = ''
 while num > BORDER:
 
